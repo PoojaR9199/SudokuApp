@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/blue">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back_btn"
+            android:padding="1dp"
+
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/Head"
+            android:layout_toRightOf="@+id/back"/>
+
+        <ImageView
+            android:id="@+id/settingHome"
+            android:layout_width="84dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="97dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toRightOf="@+id/Head"
+            android:padding="1dp"
+            android:src="@drawable/setting" />
+    </RelativeLayout>
+
+    <!-- TIMER -->
+    <TextView
+        android:id="@+id/timertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="27dp"
+        android:text="00:00"
+        android:textSize="25dp" />
+
+
+
+    <com.example.sudokuapp.view.sudokugrid.SudokuGridView
+        android:id="@+id/sudokuGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="9"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/timertext"/>
+
+    <com.example.sudokuapp.view.buttonsgrid.ButtonsGridView
+        android:id="@+id/buttonsgridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sudokuGridView"
+        android:numColumns="6">
+    </com.example.sudokuapp.view.buttonsgrid.ButtonsGridView>
+
+</RelativeLayout>

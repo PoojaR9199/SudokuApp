@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background_color"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/blue">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back_btn"
+            android:padding="1dp"
+
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/back"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relmain"
+        android:layout_width="323dp"
+        android:layout_height="500dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="70dp"
+
+        android:background="@drawable/rounded_background">
+
+        <RelativeLayout
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/sudoku"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/sudoku"
+                />
+
+            <TextView
+                android:layout_toRightOf="@id/sudoku"
+                android:id="@+id/howtoplay"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to play"
+                android:textColor="@color/TEXT"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_below="@+id/play"
+            android:layout_width="290dp"
+            android:layout_centerInParent="true"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/grey2"/>
+        <RelativeLayout
+            android:id="@+id/themes"
+            android:layout_below="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/theme"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/baseline_dark_mode_24"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/theme"
+                android:id="@+id/themesset"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/TEXT"
+                android:text="Dark Mode"
+                />
+            <Switch
+                android:id="@+id/darkmode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:switchMinWidth="50dp"/>
+<!--                android:theme="@style/Soundeffect"-->
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/view2"
+            android:layout_below="@+id/themes"
+            android:layout_width="290dp"
+            android:layout_centerInParent="true"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/grey2"/>
+
+        <RelativeLayout
+            android:id="@+id/sound"
+            android:layout_below="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/sounde"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/volume_up"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/sounde"
+                android:id="@+id/soundeffect"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Sound Effect"
+                android:textColor="@color/TEXT"
+                android:textSize="20dp"/>
+            <Switch
+                android:id="@+id/soundon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:switchMinWidth="50dp"
+                />
+
+
+
+
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/view3"
+            android:layout_below="@+id/sound"
+            android:layout_width="290dp"
+            android:layout_centerInParent="true"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/grey2"/>
+
+        <RelativeLayout
+            android:id="@+id/timer"
+            android:layout_below="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/timerr"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/timing"
+                />
+            <TextView
+                android:id="@+id/gamewon"
+                android:layout_toRightOf="@+id/timerr"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer"
+                android:textColor="@color/TEXT"
+                android:textSize="20dp"/>
+            <Switch
+                android:id="@+id/timeron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:switchMinWidth="50dp"
+                />
+<!--                android:theme="@style/Soundeffect"-->
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">sudokuAPP</string>
+    <string name="btn_new">New Game</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_history">History</string>
+
+
+    <string name="btn_easy">Easy</string>
+    <string name="btn_medium">Medium</string>
+    <string name="btn_hard">Hard</string>
+
+    <string name="text">HOW TO PLAY</string>
+    <string name="bullet_list">
+    1.Each row, column, and 3×3 grid must contain the numbers one through nine without duplicates.
+    \n\n
+    2.Fill in the grid completely obeying the rules and you have created a puzzle solution.
+    \n\n
+    3.The challenging part lays on the restrictions imposed on the player to be able to fill the grid:
+    \n\n\t
+    • Rule 1 - Each row must contain the numbers from 1 to 9, without repetitions.
+    \n\n\t
+    • Rule 2 - Each column must contain the numbers from 1 to 9, without repetitions.
+    \n\n\t
+    • Rule 3 - The digits can only occur once per block (nonet)
+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
